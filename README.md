@@ -1,14 +1,14 @@
-# 3x-ui
+# sanaii
 
 > **Disclaimer: This project is only for personal learning and communication, please do not use it for illegal purposes, please do not use it in a production environment**
 
-[![](https://img.shields.io/github/v/release/Itproexpert/3x-ui.svg)](https://github.com/Itproexpert/3x-ui/releases)
-[![](https://img.shields.io/github/actions/workflow/status/Itproexpert/3x-ui/release.yml.svg)](#)
-[![GO Version](https://img.shields.io/github/go-mod/go-version/Itproexpert/3x-ui.svg)](#)
-[![Downloads](https://img.shields.io/github/downloads/Itproexpert/3x-ui/total.svg)](#)
+[![](https://img.shields.io/github/v/release/Itproexpert/sanaii.svg)](https://github.com/Itproexpert/sanaii/releases)
+[![](https://img.shields.io/github/actions/workflow/status/Itproexpert/sanaii/release.yml.svg)](#)
+[![GO Version](https://img.shields.io/github/go-mod/go-version/Itproexpert/sanaii.svg)](#)
+[![Downloads](https://img.shields.io/github/downloads/Itproexpert/sanaii/total.svg)](#)
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-3x-ui panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese,Russian,Vietnamese)**
+sanaii panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese,Russian,Vietnamese)**
 **If you think this project is helpful to you, you may wish to give a** :star2:
 
 **Buy Me a Coffee :**
@@ -18,7 +18,7 @@
 # Install & Upgrade
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/sanaii/master/install.sh)
 ```
 
 # Install custom version
@@ -26,7 +26,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/3x-ui/master/insta
 To install your desired version you can add the version to the end of install command. Example for ver `v1.7.8`:
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/3x-ui/master/install.sh) v1.7.8
+bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/sanaii/master/install.sh) v1.7.8
 ```
 
 # SSL
@@ -66,7 +66,7 @@ You also can use `x-ui` menu then select `SSL Certificate Management`
 ```sh
 ARCH=$(uname -m)
 [[ "${ARCH}" == "aarch64" || "${ARCH}" == "arm64" ]] && XUI_ARCH="arm64" || XUI_ARCH="amd64"
-wget https://github.com/Itproexpert/3x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
+wget https://github.com/Itproexpert/sanaii/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
 ```
 
 2. Once the compressed package is downloaded, execute the following commands to install or upgrade x-ui:
@@ -102,8 +102,8 @@ systemctl restart x-ui
 2. Clone the Project Repository:
 
    ```sh
-   git clone https://github.com/Itproexpert/3x-ui.git
-   cd 3x-ui
+   git clone https://github.com/Itproexpert/sanaii.git
+   cd sanaii
    ```
 
 3. Start the Service
@@ -121,8 +121,8 @@ systemctl restart x-ui
       -v $PWD/cert/:/root/cert/ \
       --network=host \
       --restart=unless-stopped \
-      --name 3x-ui \
-      ghcr.io/Itproexpert/3x-ui:latest
+      --name sanaii \
+      ghcr.io/Itproexpert/sanaii:latest
    ```
 
 </details>
@@ -360,4 +360,4 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/Itproexpert/3x-ui.svg)](https://starchart.cc/Itproexpert/3x-ui)
+[![Stargazers over time](https://starchart.cc/Itproexpert/sanaii.svg)](https://starchart.cc/Itproexpert/sanaii)

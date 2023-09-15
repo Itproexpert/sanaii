@@ -2,9 +2,9 @@
 version: "3.9"
 
 services:
-  3x-ui:
-    image: ghcr.io/Itproexpert/3x-ui:latest
-    container_name: 3x-ui
+  sanaii:
+    image: ghcr.io/Itproexpert/sanaii:latest
+    container_name: sanaii
     hostname: yourhostname
     volumes:
       - $PWD/db/:/etc/x-ui/

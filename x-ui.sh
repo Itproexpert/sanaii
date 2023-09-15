@@ -96,7 +96,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/3x-ui/main/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/sanaii/main/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -115,7 +115,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/3x-ui/main/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/Itproexpert/sanaii/main/install.sh)
     if [[ $? == 0 ]]; then
         LOGI "Update is complete, Panel has automatically restarted "
         exit 0
@@ -349,7 +349,7 @@ enable_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/Itproexpert/3x-ui/raw/main/x-ui.sh
+    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/Itproexpert/sanaii/raw/main/x-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "Failed to download script, Please check whether the machine can connect Github"
@@ -1025,7 +1025,7 @@ show_usage() {
 
 show_menu() {
     echo -e "
-  ${green}3X-ui Panel Management Script${plain}
+  ${green}sanaii Panel Management Script${plain}
   ${green}0.${plain} Exit Script
 ————————————————
   ${green}1.${plain} Install x-ui
