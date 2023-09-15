@@ -16,9 +16,9 @@ import (
 	"x-ui/web/locale"
 	"x-ui/xray"
 
-	"github.com/mymmrac/telego"
-	th "github.com/mymmrac/telego/telegohandler"
-	tu "github.com/mymmrac/telego/telegoutil"
+	"github.com/Itproexpert/telego"
+	th "github.com/Itproexpert/telego/telegohandler"
+	tu "github.com/Itproexpert/telego/telegoutil"
 )
 
 var bot *telego.Bot
